@@ -33,6 +33,9 @@ main{
 .small-link-boxes{
     flex: 1 0 0;
 }
+section{
+    width: 50%;
+}
 
 section h2 {
     border: 1pt solid black;

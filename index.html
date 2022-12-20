@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,57 @@
 <body>
     <header class="top-nav">
         <h1>Aly Geiger</h1>
-        <a href="#cat"> About Me</a>
-        <a href="#"> Work</a>
-        <a href="#"> Contact Me</a>
-         
+        <ul class="links">
+            <li class="right"><a href="#about-me"> About Me</a></li>
+            <li class="right"><a href="#work"> Work</a></li>
+            <li class="right"><a href="#contact-me"> Contact Me</a></li>
+        </ul>
+
+
     </header>
 
-        <img id="intro-image" src="./assets/Images/big-image.jpg" alt="Sydney Harbor" style="width:100%">
-    
+    <img id="intro-image" src="./assets/Images/big-image.jpg" alt="Sydney Harbor" style="width:100%">
+
     <main>
-    <section>
-        <h2 class="big-link-box-text">About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur a consequuntur vel voluptate quasi. Sunt perspiciatis sit fugit? Numquam, itaque. Quae natus deserunt nobis officia soluta illum quis beatae.</p>
-            <img class="big-link-box" id="cat" src="./assets/Images/project-big.jpg" alt="Cat looking innocent" style="width:70%">
-    </section>
-    <section>
-        <h2>Hong Kong</h2>
-        <img class="small-link-boxes" src="./assets/Images/small-image-1.jpg" alt="Hong Kong Streets" style="width:50%">
-    </section>
-    <section>
-        <h2>Barcelona</h2>
-        <img class="small-link-boxes" src="./assets/Images/small-image-2.jpg" alt="Fountain in Park Barcelona" style="width:50%">
-    </section>
-    <section>
-        <h2>Singapore</h2>
-        <img class="small-link-boxes" src="./assets/Images/small-image-3.jpg" alt="Little India Singapore" style="width:50%">
-    </section>
-    <section>
-        <h2>London</h2>
-        <img class="small-link-boxes" src="./assets/Images/small-image-4.jpg" alt="London Streets" style="width:50%">
-    </section>
+        <section id="about-me">
+            <h2 class="big-link-box-text">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur a consequuntur vel voluptate
+                quasi. Sunt perspiciatis sit fugit? Numquam, itaque. Quae natus deserunt nobis officia soluta illum quis
+                beatae.</p>
+            <img class="big-link-box" id="cat" src="./assets/Images/project-big.jpg" alt="Cat looking innocent"
+                style="width:70%">
+        </section>
+        <section id="work">
+            <h2 class="big-link-box-text">Work</h2>
+            <div id="work-examples">
+                <section>
+                    <h2 class="labels">Hong Kong</h2>
+                    <img class="small-link-boxes" src="./assets/Images/small-image-1.jpg" alt="Hong Kong Streets">
+                </section>
+                <section>
+                    <h2 class="labels">Barcelona</h2>
+                    <img class="small-link-boxes" src="./assets/Images/small-image-2.jpg"
+                        alt="Fountain in Park Barcelona">
+                </section>
+                <section>
+                    <h2 class="labels">Singapore</h2>
+                    <img class="small-link-boxes" src="./assets/Images/small-image-3.jpg" alt="Little India Singapore">
+                </section>
+                <section>
+                    <h2 class="labels">London</h2>
+                    <img class="small-link-boxes" src="./assets/Images/small-image-4.jpg" alt="London Streets">
+                </section>
+
+            </div>
+        </section>
     </main>
-    <footer>
-        <h2>Contact Me</h2>
+    <section id="contact-me">
+        <h2 class="big-link-box-text">Contact Me</h2>
         <img src="./assets/Images/headshot.jpg" alt="Photo of me">
+    </section>
+    <footer>
+        <p>Made by Aly!</p>
     </footer>
 </body>
+
 </html>

@@ -15,11 +15,15 @@ header{
  ;
 }
 
-header>ul{
-    display:right;
-    justify-content: right;
+.links{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
 }
 
+.right{
+    padding: 10px;
+}
 
 .intro-image{
     max-height: 500px;
@@ -31,17 +35,20 @@ main{
 }
 
 .small-link-boxes{
-    flex: 1 0 0;
-}
-section{
-    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 10px;
 }
 
-section h2 {
+#about-me{
+    width: 100%;
+}
+
+.labels {
     border: 1pt solid black;
     border-radius: 4px;
     position: relative;
-    top: 350px;
+    top: 50px;
     background-color: blueviolet;
     padding: 1%;
     width: fit-content;
@@ -52,7 +59,7 @@ section h2 {
 
 }
 .big-link-box-text{
-    top:400px
+    font-size: 40px;
 }
 
 footer{
@@ -63,4 +70,10 @@ footer{
 footer>img{
     height: 150px;
     width: 150px;
+}
+
+#work-examples{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
 }

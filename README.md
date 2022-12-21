@@ -5,13 +5,11 @@
 This project was to create a reactive website from scratch.
 ```
 
-## Optimized Items:
+## Elements Completed:
 - Semantically listed HTML Elements
 - Logical HTML format structure
 - Accessible alt attributes assigned
 - Verified all links work
-- Consolidated CSS tags
-- Commented CSS elements
 
 
 ## Depolyed Viewing

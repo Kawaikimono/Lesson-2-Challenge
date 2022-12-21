@@ -1,10 +1,12 @@
 :root{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+*{
+    margin: 0px;
+}
 header{
     background-color: rgb(180, 116, 240);
     min-height: 5vh;
@@ -14,7 +16,10 @@ header{
     justify-content: space-between
  ;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .links{
     display:flex;
     justify-content: flex-end;
@@ -23,6 +28,22 @@ header{
 
 .right{
     padding: 10px;
+    text-decoration: none;
+    --s: 0.1em;  
+  --c: white; 
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+
+.right:hover{
+    --_p: 100%
 }
 
 .intro-image{
@@ -42,6 +63,8 @@ main{
 
 #about-me{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .labels {
@@ -55,11 +78,14 @@ main{
 
 }
 
-.big-link-box{
-
+#cat{
+    align-items: center;
+    width: 70%;
 }
 .big-link-box-text{
     font-size: 40px;
+    border-right: solid 2px;
+    padding-right: 5px;
 }
 
 footer{
@@ -67,13 +93,26 @@ footer{
     min-height: 15vh;
 }
 
-footer>img{
-    height: 150px;
-    width: 150px;
-}
 
+.footer-image{
+    height: 200px;
+    width: 200px;
+    padding-left: 15%;
+}
 #work-examples{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;
+    margin-left: 2rem;  
+    margin-right: 2rem
 }
+
+#contact-me{
+    justify-content: center;
+}
+@media screen and (n-width: 420px) {
+    .small-link-boxes {
+      height: 80%;
+      width: 80%;
+    }
+  }
